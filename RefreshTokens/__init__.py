@@ -25,11 +25,12 @@ class Token3Legged:
 tk3 = Token3Legged(refresh_token="your_refresh_token_here",
                         access_token="your_access_token_here",
                         expiry_datetime="2024-04-22 12:00:00")
-ForgeClientID = "mfnSk1lkE4MCuX5nn11AdKHsKdSkkEMv" 
-ForgeClientSecret = "PpKJ7fzgkepmpxw4"
-# CallBackURL = "http://localhost:7071/api/RefreshTokens"
-CallBackURL = "https://bccok-oberoi-rfi-mail-time-trigger.azurewebsites.net/api/RefreshTokens"
-scope = "data:read account:read"
+ForgeClientID = "mfnSk1lkE4MCuX5nn11AdKHsKdSkkEMv" #"mfnSk1lkE4MCuX5nn11AdKHsKdSkkEMv" 
+ForgeClientSecret =  "PpKJ7fzgkepmpxw4" # "PpKJ7fzgkepmpxw4"
+CallBackURL = "http://localhost:7071/api/RefreshTokens"
+# CallBackURL = r"http%3A%2F%2Flocalhost%3A7071%2Fapi%2FRefreshTokens"
+# CallBackURL = "https://bccok-oberoi-rfi-mail-time-trigger.azurewebsites.net/api/RefreshTokens"
+scope = "data:read data:create data:write account:read account:write"
 # Define the connection string
 connection_string = "DRIVER={ODBC Driver 18 for SQL Server};SERVER=bimageforge.database.windows.net;DATABASE=bimageforge;UID=forge;PWD=BimageNow2020"
 

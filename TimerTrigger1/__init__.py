@@ -115,7 +115,7 @@ async def main(mytimer: func.TimerRequest) -> None:
         logging.info(f"No of rfis {y['id']} --   {containerid} - {len(rfis)}")
         # projects = []
         totalrfi +=len(rfis)
-        # rfis= []
+        rfis= []
 
         for x in rfis:
             try:
