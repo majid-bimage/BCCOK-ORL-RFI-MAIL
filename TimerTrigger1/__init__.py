@@ -115,7 +115,7 @@ async def main(mytimer: func.TimerRequest) -> None:
         logging.info(f"No of rfis {y['id']} --   {containerid} - {len(rfis)}")
         # projects = []
         totalrfi +=len(rfis)
-        rfis= []
+        # rfis= []
 
         for x in rfis:
             try:
@@ -315,7 +315,7 @@ async def send_mail( data, users, pending_names, reviewer_names, creator, manage
                     with app.app_context():
                         message = Message(subject=subject, recipients=recipient, html=email_body)
                         # if a ==0:
-                        mail.send(message)
+                        # mail.send(message)
                             # a +=1
                         recipient = ['majid.n@bimageconsulting.in']
                         message = Message(subject=subject, recipients=recipient, html=email_body)
